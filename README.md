@@ -1,7 +1,7 @@
 
 # Mock eCommerce Website
 
-A mock eCommerce website that replicates the functionality of an online store like Amazon, with features including product listing, detail views, cart management, address input, and mock payment processing. This project consists of a **frontend** (React) and **backend** (Node/Express) to demonstrate a full eCommerce flow.
+A mock eCommerce website that replicates the functionality of an online store like Amazon, with features including product listing, detail views, cart management, address input, and mock payment processing. This project consists of a **client** (React) and **server** (Node/Express) to demonstrate a full eCommerce flow.
 
 ---
 
@@ -9,8 +9,8 @@ A mock eCommerce website that replicates the functionality of an online store li
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-  - [Frontend](#frontend)
-  - [Backend](#backend)
+  - [client](#client)
+  - [server](#server)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
@@ -30,8 +30,8 @@ A mock eCommerce website that replicates the functionality of an online store li
 
 ## Tech Stack
 
-- **Frontend**: React, React Router
-- **Backend**: Node.js, Express
+- **client**: React, React Router
+- **server**: Node.js, Express
 - **Styling**: Tailwind CSS
 - **Mock API**: JSON data for products and payment processing
 
@@ -52,11 +52,11 @@ git clone https://github.com/username/ecommerce-project.git
 cd ecommerce-project
 ```
 
-### Frontend
+### client
 
-1. **Navigate to the frontend directory**:
+1. **Navigate to the client directory**:
    ```bash
-   cd frontend
+   cd client
    ```
 
 2. **Install dependencies**:
@@ -74,13 +74,13 @@ cd ecommerce-project
    npm run build
    ```
 
-The frontend should now be running on `http://localhost:3000`.
+The client should now be running on `http://localhost:3000`.
 
-### Backend
+### server
 
-1. **Navigate to the backend directory**:
+1. **Navigate to the server directory**:
    ```bash
-   cd backend
+   cd server
    ```
 
 2. **Install dependencies**:
@@ -89,7 +89,7 @@ The frontend should now be running on `http://localhost:3000`.
    ```
 
 3. **Set up environment variables**:
-   - Create a `.env` file in the backend directory.
+   - Create a `.env` file in the server directory.
    - Add the following variables (customize as needed):
      ```env
      PORT=5000
@@ -100,17 +100,17 @@ The frontend should now be running on `http://localhost:3000`.
    npm start
    ```
 
-The backend server should now be running on `http://localhost:5000`.
+The server server should now be running on `http://localhost:5000`.
 
 ---
 
 ## Usage
 
-1. **Run Frontend**:
-   - Open [http://localhost:3000](http://localhost:3000) in the browser to access the frontend.
+1. **Run client**:
+   - Open [http://localhost:3000](http://localhost:3000) in the browser to access the client.
 
-2. **Run Backend**:
-   - The backend API will be available at `http://localhost:5000`.
+2. **Run server**:
+   - The server API will be available at `http://localhost:5000`.
 
 3. **Demo User Flow**:
    - Browse products on the homepage.
@@ -126,7 +126,7 @@ The backend server should now be running on `http://localhost:5000`.
 ```markdown
 ecommerce-project/
 │
-├── frontend/               # Frontend (React)
+├── client/               # client (React)
 │   ├── src/
 │   │   ├── components/     # Reusable UI components
 │   │   ├── context/        # Context for global state (CartContext)
@@ -138,7 +138,7 @@ ecommerce-project/
 │   ├── package.json
 │   └── ...
 │
-├── backend/                # Backend (Node/Express)
+├── server/                # server (Node/Express)
 │   ├── controllers/        # Business logic for orders, products, payments
 │   ├── models/             # Mongoose schemas for Order and Product
 │   ├── routes/             # Route handlers for API endpoints
